@@ -1,0 +1,781 @@
+[0;32mI (117) esp_image: segment 1: paddr=00031c28 vaddr=3fc916ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42008494
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb64
+load:0x403ce710,len:0x2e48
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2-dev-3318-g8fc8f3f479-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 14 2023 01:43:08[0m
+[0;32mI (26) boot: chip revision: v0.4[0m
+[0;32mI (29) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (34) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=21c00h (138240) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00031c28 vaddr=3fc91600 size=025cch (  9676) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=000341fc vaddr=40380000 size=0be1ch ( 48668) load[0m
+[0;32mI (133) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=8f8ach (587948) map[0m
+[0;32mI (228) esp_image: segment 4: paddr=000cf8d4 vaddr=4038be1c size=056cch ( 22220) load[0m
+[0;32mI (238) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (239) boot: Disabling RNG early entropy source...[0m
+[0;32mI (250) cpu_start: Unicore app[0m
+[0;32mI (259) cpu_start: Pro cpu start user code[0m
+[0;32mI (259) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (259) cpu_start: Application information:[0m
+[0;32mI (262) cpu_start: Project name:     hidd_demos[0m
+[0;32mI (267) cpu_start: App version:      1[0m
+[0;32mI (272) cpu_start: Compile time:     Nov 14 2023 01:42:41[0m
+[0;32mI (278) cpu_start: ELF file SHA256:  f8027679b...[0m
+[0;32mI (283) cpu_start: ESP-IDF:          v5.2-dev-3318-g8fc8f3f479-dirty[0m
+[0;32mI (290) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (295) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (300) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (304) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (312) heap_init: At 3FC98300 len 00044410 (273 KiB): DRAM[0m
+[0;32mI (318) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (324) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (332) spi_flash: detected chip: generic[0m
+[0;32mI (335) spi_flash: flash io: dio[0m
+[0;33mW (339) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (353) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (363) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (370) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (377) coexist: coex firmware version: 8770c12[0m
+[0;32mI (382) coexist: coexist rom version 9387209[0m
+[0;32mI (388) main_task: Started on CPU0[0m
+[0;32mI (388) main_task: Calling app_main()[0m
+[0;32mI (398) BLE_INIT: BT controller compile version [c8aa206][0m
+[0;32mI (398) BLE_INIT: Bluetooth MAC: 34:85:18:02:e0:4e[0m
+[0;32mI (408) phy_init: phy_version 1130,b4e4b80,Sep  5 2023,11:09:30[0m
+[0;32mI (478) HID_LE_PRF: esp_hidd_prf_cb_hdl(), start added the hid service to the stack database. incl_handle = 40[0m
+[0;32mI (478) HID_LE_PRF: hid svc handle = 2d[0m
+[0;32mI (758) HID_LE_PRF: HID connection establish, conn_id = 0[0m
+[0;32mI (758) HID_DEMO: ESP_HIDD_EVENT_BLE_CONNECT[0m
+[0;32mI (848) HID_DEMO: remote BD_ADDR: 085bd6a6f2a6[0m
+[0;32mI (848) HID_DEMO: address type = 0[0m
+[0;32mI (848) HID_DEMO: pair status = success[0m
+[0;32mI (858) HID_DEMO: Send the volume[0m
+[0;32mI (858) main_task: Returned from app_main()[0m
+[0;32mI (898) HID_DEMO: ESP_HIDD_EVENT_BLE_LED_REPORT_WRITE_EVT[0m
+[0;32mI (898) HID_DEMO: 01 [0m
+Guru Meditation Error: Core  0 panic'ed (Load access fault). Exception was unhandled.
+
+Core  0 register dump:
+MEPC    : 0x420084cc  RA      : 0x420084cc  SP      : 0x3fcac450  GP      : 0x3fc91e00  
+TP      : 0x3fc8b174  T0      : 0x4005890e  T1      : 0x00002000  T2      : 0x00000000  
+S0/FP   : 0x00000000  S1      : 0x00000000  A0      : 0x00000000  A1      : 0x00000200  
+A2      : 0x3fc98338  A3      : 0xfffffe0c  A4      : 0xfffffe0c  A5      : 0xffffffc9  
+A6      : 0x00000001  A7      : 0x00000001  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000001  T4      : 0x3fcac86c  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000005  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+hid_demo_task (pvParameters=<error reading variable: value has been optimized out>) at /home/ubuntu/esp/lab4/lab4_3/ble_hid_device_demo/main/ble_hidd_demo_main.c:267
+267	            if (gyro[0]){
+#0  hid_demo_task (pvParameters=<error reading variable: value has been optimized out>) at /home/ubuntu/esp/lab4/lab4_3/ble_hid_device_demo/main/ble_hidd_demo_main.c:267
+#1  0x4038ad6a in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /home/ubuntu/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:234
+ELF file SHA256: f8027679b
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038066c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb64
+load:0x403ce710,len:0x2e48
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2-dev-3318-g8fc8f3f479-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 14 2023 01:43:08[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (29) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (34) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (86) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=21c00h (138240) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00031c28 vaddr=3fc91600 size=025cch (  9676) load[0m
+[0;32mI (119) esp_image: segment 2: paddr=000341fc vaddr=40380000 size=0be1ch ( 48668) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=8f8ach (587948) map[0m
+[0;32mI (228) esp_image: segment 4: paddr=000cf8d4 vaddr=4038be1c size=056cch ( 22220) load[0m
+[0;32mI (238) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (238) boot: Disabling RNG early entropy source...[0m
+[0;32mI (249) cpu_start: Unicore app[0m
+[0;32mI (258) cpu_start: Pro cpu start user code[0m
+[0;32mI (258) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (259) cpu_start: Application information:[0m
+[0;32mI (261) cpu_start: Project name:     hidd_demos[0m
+[0;32mI (267) cpu_start: App version:      1[0m
+[0;32mI (271) cpu_start: Compile time:     Nov 14 2023 01:42:41[0m
+[0;32mI (277) cpu_start: ELF file SHA256:  f8027679b...[0m
+[0;32mI (283) cpu_start: ESP-IDF:          v5.2-dev-3318-g8fc8f3f479-dirty[0m
+[0;32mI (290) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (294) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (299) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (304) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (311) heap_init: At 3FC98300 len 00044410 (273 KiB): DRAM[0m
+[0;32mI (317) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (324) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (331) spi_flash: detected chip: generic[0m
+[0;32mI (335) spi_flash: flash io: dio[0m
+[0;33mW (339) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (352) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (363) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (369) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (377) coexist: coex firmware version: 8770c12[0m
+[0;32mI (382) coexist: coexist rom version 9387209[0m
+[0;32mI (387) main_task: Started on CPU0[0m
+[0;32mI (387) main_task: Calling app_main()[0m
+[0;32mI (397) BLE_INIT: BT controller compile version [c8aa206][0m
+[0;32mI (397) BLE_INIT: Bluetooth MAC: 34:85:18:02:e0:4e[0m
+[0;32mI (407) phy_init: phy_version 1130,b4e4b80,Sep  5 2023,11:09:30[0m
+[0;32mI (477) HID_LE_PRF: esp_hidd_prf_cb_hdl(), start added the hid service to the stack database. incl_handle = 40[0m
+[0;32mI (477) HID_LE_PRF: hid svc handle = 2d[0m
+[0;32mI (1827) HID_LE_PRF: HID connection establish, conn_id = 0[0m
+[0;32mI (1827) HID_DEMO: ESP_HIDD_EVENT_BLE_CONNECT[0m
+[0;32mI (1917) HID_DEMO: remote BD_ADDR: 085bd6a6f2a6[0m
+[0;32mI (1917) HID_DEMO: address type = 0[0m
+[0;32mI (1917) HID_DEMO: pair status = success[0m
+[0;32mI (1917) HID_DEMO: Send the volume[0m
+[0;32mI (1927) main_task: Returned from app_main()[0m
+Guru Meditation Error: Core  0 panic'ed (Load access fault). Exception was unhandled.
+
+Core  0 register dump:
+MEPC    : 0x420084cc  RA      : 0x420084cc  SP      : 0x3fcac450  GP      : 0x3fc91e00  
+TP      : 0x3fc8b174  T0      : 0x4005890e  T1      : 0x00002000  T2      : 0x00000000  
+S0/FP   : 0x00000000  S1      : 0x00000000  A0      : 0x00000000  A1      : 0x00000200  
+A2      : 0x3fc98338  A3      : 0xfffffe0c  A4      : 0xfffffe0c  A5      : 0x0000001c  
+A6      : 0x00000001  A7      : 0x00000001  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000001  T4      : 0x3fcac86c  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000005  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+hid_demo_task (pvParameters=<error reading variable: value has been optimized out>) at /home/ubuntu/esp/lab4/lab4_3/ble_hid_device_demo/main/ble_hidd_demo_main.c:267
+267	            if (gyro[0]){
+#0  hid_demo_task (pvParameters=<error reading variable: value has been optimized out>) at /home/ubuntu/esp/lab4/lab4_3/ble_hid_device_demo/main/ble_hidd_demo_main.c:267
+#1  0x4038ad6a in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /home/ubuntu/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:234
+ELF file SHA256: f8027679b
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038066c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb64
+load:0x403ce710,len:0x2e48
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2-dev-3318-g8fc8f3f479-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 14 2023 01:43:08[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (29) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (34) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (86) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=21c00h (138240) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00031c28 vaddr=3fc91600 size=025cch (  9676) load[0m
+[0;32mI (119) esp_image: segment 2: paddr=000341fc vaddr=40380000 size=0be1ch ( 48668) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=8f8ach (587948) map[0m
+[0;32mI (228) esp_image: segment 4: paddr=000cf8d4 vaddr=4038be1c size=056cch ( 22220) load[0m
+[0;32mI (238) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (238) boot: Disabling RNG early entropy source...[0m
+[0;32mI (249) cpu_start: Unicore app[0m
+[0;32mI (258) cpu_start: Pro cpu start user code[0m
+[0;32mI (258) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (259) cpu_start: Application information:[0m
+[0;32mI (261) cpu_start: Project name:     hidd_demos[0m
+[0;32mI (267) cpu_start: App version:      1[0m
+[0;32mI (271) cpu_start: Compile time:     Nov 14 2023 01:42:41[0m
+[0;32mI (277) cpu_start: ELF file SHA256:  f8027679b...[0m
+[0;32mI (283) cpu_start: ESP-IDF:          v5.2-dev-3318-g8fc8f3f479-dirty[0m
+[0;32mI (290) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (294) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (299) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (304) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (311) heap_init: At 3FC98300 len 00044410 (273 KiB): DRAM[0m
+[0;32mI (317) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (324) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (331) spi_flash: detected chip: generic[0m
+[0;32mI (335) spi_flash: flash io: dio[0m
+[0;33mW (339) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (352) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (363) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (369) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (377) coexist: coex firmware version: 8770c12[0m
+[0;32mI (382) coexist: coexist rom version 9387209[0m
+[0;32mI (387) main_task: Started on CPU0[0m
+[0;32mI (387) main_task: Calling app_main()[0m
+[0;32mI (397) BLE_INIT: BT controller compile version [c8aa206][0m
+[0;32mI (397) BLE_INIT: Bluetooth MAC: 34:85:18:02:e0:4e[0m
+[0;32mI (407) phy_init: phy_version 1130,b4e4b80,Sep  5 2023,11:09:30[0m
+[0;32mI (467) HID_LE_PRF: esp_hidd_prf_cb_hdl(), start added the hid service to the stack database. incl_handle = 40[0m
+[0;32mI (477) HID_LE_PRF: hid svc handle = 2d[0m
+[0;32mI (2297) HID_LE_PRF: HID connection establish, conn_id = 0[0m
+[0;32mI (2297) HID_DEMO: ESP_HIDD_EVENT_BLE_CONNECT[0m
+[0;32mI (2527) HID_DEMO: remote BD_ADDR: 085bd6a6f2a6[0m
+[0;32mI (2527) HID_DEMO: address type = 0[0m
+[0;32mI (2527) HID_DEMO: pair status = success[0m
+[0;32mI (2527) HID_DEMO: Send the volume[0m
+[0;32mI (2537) main_task: Returned from app_main()[0m
+[0;32mI (2567) HID_DEMO: ESP_HIDD_EVENT_BLE_LED_REPORT_WRITE_EVT[0m
+[0;32mI (2567) HID_DEMO: 01 [0m
+Guru Meditation Error: Core  0 panic'ed (Load access fault). Exception was unhandled.
+
+Core  0 register dump:
+MEPC    : 0x420084cc  RA      : 0x420084cc  SP      : 0x3fcac450  GP      : 0x3fc91e00  
+TP      : 0x3fc8b174  T0      : 0x4005890e  T1      : 0x00002000  T2      : 0x00000000  
+S0/FP   : 0x00000000  S1      : 0x00000000  A0      : 0x00000000  A1      : 0x00000200  
+A2      : 0x3fc98338  A3      : 0xfffffe0c  A4      : 0xfffffe0c  A5      : 0x00000001  
+A6      : 0x00000001  A7      : 0x00000001  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000001  T4      : 0x3fcac86c  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000005  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+hid_demo_task (pvParameters=<error reading variable: value has been optimized out>) at /home/ubuntu/esp/lab4/lab4_3/ble_hid_device_demo/main/ble_hidd_demo_main.c:267
+267	            if (gyro[0]){
+#0  hid_demo_task (pvParameters=<error reading variable: value has been optimized out>) at /home/ubuntu/esp/lab4/lab4_3/ble_hid_device_demo/main/ble_hidd_demo_main.c:267
+#1  0x4038ad6a in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /home/ubuntu/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:234
+ELF file SHA256: f8027679b
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038066c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb64
+load:0x403ce710,len:0x2e48
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2-dev-3318-g8fc8f3f479-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 14 2023 01:43:08[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (29) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (34) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (86) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=21c00h (138240) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00031c28 vaddr=3fc91600 size=025cch (  9676) load[0m
+[0;32mI (119) esp_image: segment 2: paddr=000341fc vaddr=40380000 size=0be1ch ( 48668) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=8f8ach (587948) map[0m
+[0;32mI (228) esp_image: segment 4: paddr=000cf8d4 vaddr=4038be1c size=056cch ( 22220) load[0m
+[0;32mI (238) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (238) boot: Disabling RNG early entropy source...[0m
+[0;32mI (249) cpu_start: Unicore app[0m
+[0;32mI (258) cpu_start: Pro cpu start user code[0m
+[0;32mI (258) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (259) cpu_start: Application information:[0m
+[0;32mI (261) cpu_start: Project name:     hidd_demos[0m
+[0;32mI (267) cpu_start: App version:      1[0m
+[0;32mI (271) cpu_start: Compile time:     Nov 14 2023 01:42:41[0m
+[0;32mI (277) cpu_start: ELF file SHA256:  f8027679b...[0m
+[0;32mI (283) cpu_start: ESP-IDF:          v5.2-dev-3318-g8fc8f3f479-dirty[0m
+[0;32mI (290) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (294) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (299) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (304) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (311) heap_init: At 3FC98300 len 00044410 (273 KiB): DRAM[0m
+[0;32mI (317) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (324) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (331) spi_flash: detected chip: generic[0m
+[0;32mI (335) spi_flash: flash io: dio[0m
+[0;33mW (339) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (352) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (363) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (369) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (377) coexist: coex firmware version: 8770c12[0m
+[0;32mI (382) coexist: coexist rom version 9387209[0m
+[0;32mI (387) main_task: Started on CPU0[0m
+[0;32mI (387) main_task: Calling app_main()[0m
+[0;32mI (397) BLE_INIT: BT controller compile version [c8aa206][0m
+[0;32mI (397) BLE_INIT: Bluetooth MAC: 34:85:18:02:e0:4e[0m
+[0;32mI (407) phy_init: phy_version 1130,b4e4b80,Sep  5 2023,11:09:30[0m
+[0;32mI (467) HID_LE_PRF: esp_hidd_prf_cb_hdl(), start added the hid service to the stack database. incl_handle = 40[0m
+[0;32mI (477) HID_LE_PRF: hid svc handle = 2d[0m
+[0;32mI (1777) HID_LE_PRF: HID connection establish, conn_id = 0[0m
+[0;32mI (1777) HID_DEMO: ESP_HIDD_EVENT_BLE_CONNECT[0m
+[0;32mI (1867) HID_DEMO: remote BD_ADDR: 085bd6a6f2a6[0m
+[0;32mI (1867) HID_DEMO: address type = 0[0m
+[0;32mI (1867) HID_DEMO: pair status = success[0m
+[0;32mI (1867) HID_DEMO: Send the volume[0m
+[0;32mI (1867) main_task: Returned from app_main()[0m
+Guru Meditation Error: Core  0 panic'ed (Load access fault). Exception was unhandled.
+
+Core  0 register dump:
+MEPC    : 0x420084cc  RA      : 0x420084cc  SP      : 0x3fcac450  GP      : 0x3fc91e00  
+TP      : 0x3fc8b174  T0      : 0x4005890e  T1      : 0x00002000  T2      : 0x00000000  
+S0/FP   : 0x00000000  S1      : 0x00000000  A0      : 0x00000000  A1      : 0x00000200  
+A2      : 0x3fc98338  A3      : 0xfffffe0c  A4      : 0xfffffe0c  A5      : 0x00000043  
+A6      : 0x00000001  A7      : 0x00000001  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000001  T4      : 0x3fcac86c  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000005  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+hid_demo_task (pvParameters=<error reading variable: value has been optimized out>) at /home/ubuntu/esp/lab4/lab4_3/ble_hid_device_demo/main/ble_hidd_demo_main.c:267
+267	            if (gyro[0]){
+#0  hid_demo_task (pvParameters=<error reading variable: value has been optimized out>) at /home/ubuntu/esp/lab4/lab4_3/ble_hid_device_demo/main/ble_hidd_demo_main.c:267
+#1  0x4038ad6a in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /home/ubuntu/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:234
+ELF file SHA256: f8027679b
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038066c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb64
+load:0x403ce710,len:0x2e48
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2-dev-3318-g8fc8f3f479-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 14 2023 01:43:08[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (29) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (34) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (86) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=21c00h (138240) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00031c28 vaddr=3fc91600 size=025cch (  9676) load[0m
+[0;32mI (119) esp_image: segment 2: paddr=000341fc vaddr=40380000 size=0be1ch ( 48668) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=8f8ach (587948) map[0m
+[0;32mI (228) esp_image: segment 4: paddr=000cf8d4 vaddr=4038be1c size=056cch ( 22220) load[0m
+[0;32mI (238) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (238) boot: Disabling RNG early entropy source...[0m
+[0;32mI (249) cpu_start: Unicore app[0m
+[0;32mI (258) cpu_start: Pro cpu start user code[0m
+[0;32mI (258) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (259) cpu_start: Application information:[0m
+[0;32mI (261) cpu_start: Project name:     hidd_demos[0m
+[0;32mI (267) cpu_start: App version:      1[0m
+[0;32mI (271) cpu_start: Compile time:     Nov 14 2023 01:42:41[0m
+[0;32mI (277) cpu_start: ELF file SHA256:  f8027679b...[0m
+[0;32mI (283) cpu_start: ESP-IDF:          v5.2-dev-3318-g8fc8f3f479-dirty[0m
+[0;32mI (290) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (294) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (299) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (304) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (311) heap_init: At 3FC98300 len 00044410 (273 KiB): DRAM[0m
+[0;32mI (317) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (324) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (331) spi_flash: detected chip: generic[0m
+[0;32mI (335) spi_flash: flash io: dio[0m
+[0;33mW (339) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (352) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (363) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (369) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (377) coexist: coex firmware version: 8770c12[0m
+[0;32mI (382) coexist: coexist rom version 9387209[0m
+[0;32mI (387) main_task: Started on CPU0[0m
+[0;32mI (387) main_task: Calling app_main()[0m
+[0;32mI (397) BLE_INIT: BT controller compile version [c8aa206][0m
+[0;32mI (397) BLE_INIT: Bluetooth MAC: 34:85:18:02:e0:4e[0m
+[0;32mI (407) phy_init: phy_version 1130,b4e4b80,Sep  5 2023,11:09:30[0m
+[0;32mI (477) HID_LE_PRF: esp_hidd_prf_cb_hdl(), start added the hid service to the stack database. incl_handle = 40[0m
+[0;32mI (477) HID_LE_PRF: hid svc handle = 2d[0m
+[0;32mI (2397) HID_LE_PRF: HID connection establish, conn_id = 0[0m
+[0;32mI (2397) HID_DEMO: ESP_HIDD_EVENT_BLE_CONNECT[0m
+[0;32mI (2487) HID_DEMO: remote BD_ADDR: 085bd6a6f2a6[0m
+[0;32mI (2487) HID_DEMO: address type = 0[0m
+[0;32mI (2487) HID_DEMO: pair status = success[0m
+[0;32mI (2487) HID_DEMO: Send the volume[0m
+[0;32mI (2497) main_task: Returned from app_main()[0m
+[0;32mI (2527) HID_DEMO: ESP_HIDD_EVENT_BLE_LED_REPORT_WRITE_EVT[0m
+[0;32mI (2527) HID_DEMO: 01 [0m
+Guru Meditation Error: Core  0 panic'ed (Load access fault). Exception was unhandled.
+
+Core  0 register dump:
+MEPC    : 0x420084cc  RA      : 0x420084cc  SP      : 0x3fcac450  GP      : 0x3fc91e00  
+TP      : 0x3fc8b174  T0      : 0x4005890e  T1      : 0x00002000  T2      : 0x00000000  
+S0/FP   : 0x00000000  S1      : 0x00000000  A0      : 0x00000000  A1      : 0x00000200  
+A2      : 0x3fc98338  A3      : 0xfffffe0c  A4      : 0x000001f4  A5      : 0x00000001  
+A6      : 0x00000001  A7      : 0x00000001  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000001  T4      : 0x3fcac86c  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000005  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+hid_demo_task (pvParameters=<error reading variable: value has been optimized out>) at /home/ubuntu/esp/lab4/lab4_3/ble_hid_device_demo/main/ble_hidd_demo_main.c:267
+267	            if (gyro[0]){
+#0  hid_demo_task (pvParameters=<error reading variable: value has been optimized out>) at /home/ubuntu/esp/lab4/lab4_3/ble_hid_device_demo/main/ble_hidd_demo_main.c:267
+#1  0x4038ad6a in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /home/ubuntu/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:234
+ELF file SHA256: f8027679b
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038066c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb64
+load:0x403ce710,len:0x2e48
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2-dev-3318-g8fc8f3f479-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 14 2023 01:43:08[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (29) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (34) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (86) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=21c00h (138240) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00031c28 vaddr=3fc91600 size=025cch (  9676) load[0m
+[0;32mI (119) esp_image: segment 2: paddr=000341fc vaddr=40380000 size=0be1ch ( 48668) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=8f8ach (587948) map[0m
+[0;32mI (228) esp_image: segment 4: paddr=000cf8d4 vaddr=4038be1c size=056cch ( 22220) load[0m
+[0;32mI (238) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (238) boot: Disabling RNG early entropy source...[0m
+[0;32mI (249) cpu_start: Unicore app[0m
+[0;32mI (258) cpu_start: Pro cpu start user code[0m
+[0;32mI (258) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (259) cpu_start: Application information:[0m
+[0;32mI (261) cpu_start: Project name:     hidd_demos[0m
+[0;32mI (267) cpu_start: App version:      1[0m
+[0;32mI (271) cpu_start: Compile time:     Nov 14 2023 01:42:41[0m
+[0;32mI (277) cpu_start: ELF file SHA256:  f8027679b...[0m
+[0;32mI (283) cpu_start: ESP-IDF:          v5.2-dev-3318-g8fc8f3f479-dirty[0m
+[0;32mI (290) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (294) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (299) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (304) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (311) heap_init: At 3FC98300 len 00044410 (273 KiB): DRAM[0m
+[0;32mI (317) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (324) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (331) spi_flash: detected chip: generic[0m
+[0;32mI (335) spi_flash: flash io: dio[0m
+[0;33mW (339) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (352) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (363) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (369) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (377) coexist: coex firmware version: 8770c12[0m
+[0;32mI (382) coexist: coexist rom version 9387209[0m
+[0;32mI (387) main_task: Started on CPU0[0m
+[0;32mI (387) main_task: Calling app_main()[0m
+[0;32mI (397) BLE_INIT: BT controller compile version [c8aa206][0m
+[0;32mI (397) BLE_INIT: Bluetooth MAC: 34:85:18:02:e0:4e[0m
+[0;32mI (407) phy_init: phy_version 1130,b4e4b80,Sep  5 2023,11:09:30[0m
+[0;32mI (477) HID_LE_PRF: esp_hidd_prf_cb_hdl(), start added the hid service to the stack database. incl_handle = 40[0m
+[0;32mI (477) HID_LE_PRF: hid svc handle = 2d[0m
+[0;32mI (1867) HID_LE_PRF: HID connection establish, conn_id = 0[0m
+[0;32mI (1867) HID_DEMO: ESP_HIDD_EVENT_BLE_CONNECT[0m
+[0;32mI (1977) HID_DEMO: remote BD_ADDR: 085bd6a6f2a6[0m
+[0;32mI (1977) HID_DEMO: address type = 0[0m
+[0;32mI (1977) HID_DEMO: pair status = success[0m
+[0;32mI (1977) HID_DEMO: Send the volume[0m
+[0;32mI (1977) main_task: Returned from app_main()[0m
+Guru Meditation Error: Core  0 panic'ed (Load access fault). Exception was unhandled.
+
+Core  0 register dump:
+MEPC    : 0x420084cc  RA      : 0x420084cc  SP      : 0x3fcac450  GP      : 0x3fc91e00  
+TP      : 0x3fc8b174  T0      : 0x4005890e  T1      : 0x00002000  T2      : 0x00000000  
+S0/FP   : 0x00000000  S1      : 0x00000000  A0      : 0x00000000  A1      : 0x00000200  
+A2      : 0x3fc98338  A3      : 0xfffffe0c  A4      : 0xfffffe0c  A5      : 0xffffff04  
+A6      : 0x00000001  A7      : 0x00000001  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000001  T4      : 0x3fcac86c  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000005  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+hid_demo_task (pvParameters=<error reading variable: value has been optimized out>) at /home/ubuntu/esp/lab4/lab4_3/ble_hid_device_demo/main/ble_hidd_demo_main.c:267
+267	            if (gyro[0]){
+#0  hid_demo_task (pvParameters=<error reading variable: value has been optimized out>) at /home/ubuntu/esp/lab4/lab4_3/ble_hid_device_demo/main/ble_hidd_demo_main.c:267
+#1  0x4038ad6a in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /home/ubuntu/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:234
+ELF file SHA256: f8027679b
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038066c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb64
+load:0x403ce710,len:0x2e48
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2-dev-3318-g8fc8f3f479-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 14 2023 01:43:08[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (29) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (34) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (86) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=21c00h (138240) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00031c28 vaddr=3fc91600 size=025cch (  9676) load[0m
+[0;32mI (119) esp_image: segment 2: paddr=000341fc vaddr=40380000 size=0be1ch ( 48668) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=8f8ach (587948) map[0m
+[0;32mI (228) esp_image: segment 4: paddr=000cf8d4 vaddr=4038be1c size=056cch ( 22220) load[0m
+[0;32mI (238) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (238) boot: Disabling RNG early entropy source...[0m
+[0;32mI (249) cpu_start: Unicore app[0m
+[0;32mI (258) cpu_start: Pro cpu start user code[0m
+[0;32mI (258) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (259) cpu_start: Application information:[0m
+[0;32mI (261) cpu_start: Project name:     hidd_demos[0m
+[0;32mI (267) cpu_start: App version:      1[0m
+[0;32mI (271) cpu_start: Compile time:     Nov 14 2023 01:42:41[0m
+[0;32mI (277) cpu_start: ELF file SHA256:  f8027679b...[0m
+[0;32mI (283) cpu_start: ESP-IDF:          v5.2-dev-3318-g8fc8f3f479-dirty[0m
+[0;32mI (290) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (294) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (299) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (304) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (311) heap_init: At 3FC98300 len 00044410 (273 KiB): DRAM[0m
+[0;32mI (317) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (324) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (331) spi_flash: detected chip: generic[0m
+[0;32mI (335) spi_flash: flash io: dio[0m
+[0;33mW (339) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (352) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (363) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (369) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (377) coexist: coex firmware version: 8770c12[0m
+[0;32mI (382) coexist: coexist rom version 9387209[0m
+[0;32mI (387) main_task: Started on CPU0[0m
+[0;32mI (387) main_task: Calling app_main()[0m
+[0;32mI (397) BLE_INIT: BT controller compile version [c8aa206][0m
+[0;32mI (397) BLE_INIT: Bluetooth MAC: 34:85:18:02:e0:4e[0m
+[0;32mI (407) phy_init: phy_version 1130,b4e4b80,Sep  5 2023,11:09:30[0m
+[0;32mI (477) HID_LE_PRF: esp_hidd_prf_cb_hdl(), start added the hid service to the stack database. incl_handle = 40[0m
+[0;32mI (487) HID_LE_PRF: hid svc handle = 2d[0m
+[0;32mI (2047) HID_LE_PRF: HID connection establish, conn_id = 0[0m
+[0;32mI (2047) HID_DEMO: ESP_HIDD_EVENT_BLE_CONNECT[0m
+[0;32mI (2137) HID_DEMO: remote BD_ADDR: 085bd6a6f2a6[0m
+[0;32mI (2137) HID_DEMO: address type = 0[0m
+[0;32mI (2137) HID_DEMO: pair status = success[0m
+[0;32mI (2147) HID_DEMO: Send the volume[0m
+[0;32mI (2147) main_task: Returned from app_main()[0m
+[0;32mI (2227) HID_DEMO: ESP_HIDD_EVENT_BLE_LED_REPORT_WRITE_EVT[0m
+[0;32mI (2227) HID_DEMO: 01 [0m
+Guru Meditation Error: Core  0 panic'ed (Load access fault). Exception was unhandled.
+
+Core  0 register dump:
+MEPC    : 0x420084cc  RA      : 0x420084cc  SP      : 0x3fcac450  GP      : 0x3fc91e00  
+TP      : 0x3fc8b174  T0      : 0x4005890e  T1      : 0x00002000  T2      : 0x00000000  
+S0/FP   : 0x00000000  S1      : 0x00000000  A0      : 0x00000000  A1      : 0x00000200  
+A2      : 0x3fc98338  A3      : 0xfffffe0c  A4      : 0xfffffe0c  A5      : 0xffffffee  
+A6      : 0x00000001  A7      : 0x00000001  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000001  T4      : 0x3fcac86c  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000005  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+hid_demo_task (pvParameters=<error reading variable: value has been optimized out>) at /home/ubuntu/esp/lab4/lab4_3/ble_hid_device_demo/main/ble_hidd_demo_main.c:267
+267	            if (gyro[0]){
+#0  hid_demo_task (pvParameters=<error reading variable: value has been optimized out>) at /home/ubuntu/esp/lab4/lab4_3/ble_hid_device_demo/main/ble_hidd_demo_main.c:267
+#1  0x4038ad6a in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /home/ubuntu/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:234
+ELF file SHA256: f8027679b
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038066c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb64
+load:0x403ce710,len:0x2e48
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2-dev-3318-g8fc8f3f479-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 14 2023 01:43:08[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (29) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (34) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (86) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=21c00h (138240) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00031c28 vaddr=3fc91600 size=025cch (  9676) load[0m
+[0;32mI (119) esp_image: segment 2: paddr=000341fc vaddr=40380000 size=0be1ch ( 48668) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=8f8ach (587948) map[0m
+[0;32mI (228) esp_image: segment 4: paddr=000cf8d4 vaddr=4038be1c size=056cch ( 22220) load[0m
+[0;32mI (238) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (238) boot: Disabling RNG early entropy source...[0m
+[0;32mI (249) cpu_start: Unicore app[0m
+[0;32mI (258) cpu_start: Pro cpu start user code[0m
+[0;32mI (258) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (259) cpu_start: Application information:[0m
+[0;32mI (261) cpu_start: Project name:     hidd_demos[0m
+[0;32mI (267) cpu_start: App version:      1[0m
+[0;32mI (271) cpu_start: Compile time:     Nov 14 2023 01:42:41[0m
+[0;32mI (277) cpu_start: ELF file SHA256:  f8027679b...[0m
+[0;32mI (283) cpu_start: ESP-IDF:          v5.2-dev-3318-g8fc8f3f479-dirty[0m
+[0;32mI (290) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (294) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (299) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (304) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (311) heap_init: At 3FC98300 len 00044410 (273 KiB): DRAM[0m
+[0;32mI (317) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (324) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (331) spi_flash: detected chip: generic[0m
+[0;32mI (335) spi_flash: flash io: dio[0m
+[0;33mW (339) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (352) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (363) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (369) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (377) coexist: coex firmware version: 8770c12[0m
+[0;32mI (382) coexist: coexist rom version 9387209[0m
+[0;32mI (387) main_task: Started on CPU0[0m
+[0;32mI (387) main_task: Calling app_main()[0m
+[0;32mI (397) BLE_INIT: BT controller compile version [c8aa206][0m
+[0;32mI (397) BLE_INIT: Bluetooth MAC: 34:85:18:02:e0:4e[0m
+[0;32mI (407) phy_init: phy_version 1130,b4e4b80,Sep  5 2023,11:09:30[0m
+[0;32mI (467) HID_LE_PRF: esp_hidd_prf_cb_hdl(), start added the hid service to the stack database. incl_handle = 40[0m
+[0;32mI (467) HID_LE_PRF: hid svc handle = 2d[0m
+[0;32mI (1807) HID_LE_PRF: HID connection establish, conn_id = 0[0m
+[0;32mI (1807) HID_DEMO: ESP_HIDD_EVENT_BLE_CONNECT[0m
+[0;32mI (1897) HID_DEMO: remote BD_ADDR: 085bd6a6f2a6[0m
+[0;32mI (1897) HID_DEMO: address type = 0[0m
+[0;32mI (1897) HID_DEMO: pair status = success[0m
+[0;32mI (1907) HID_DEMO: Send the volume[0m
+[0;32mI (1907) main_task: Returned from app_main()[0m
+Guru Meditation Error: Core  0 panic'ed (Load access fault). Exception was unhandled.
+
+Core  0 register dump:
+MEPC    : 0x420084cc  RA      : 0x420084cc  SP      : 0x3fcac450  GP      : 0x3fc91e00  
+TP      : 0x3fc8b174  T0      : 0x4005890e  T1      : 0x00002000  T2      : 0x00000000  
+S0/FP   : 0x00000000  S1      : 0x00000000  A0      : 0x00000000  A1      : 0x00000200  
+A2      : 0x3fc98338  A3      : 0xfffffe0c  A4      : 0xfffffe0c  A5      : 0xffffffe8  
+A6      : 0x00000001  A7      : 0x00000001  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x00000001  T4      : 0x3fcac86c  T5      : 0x00000000  T6      : 0x00000000  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000005  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+hid_demo_task (pvParameters=<error reading variable: value has been optimized out>) at /home/ubuntu/esp/lab4/lab4_3/ble_hid_device_demo/main/ble_hidd_demo_main.c:267
+267	            if (gyro[0]){
+#0  hid_demo_task (pvParameters=<error reading variable: value has been optimized out>) at /home/ubuntu/esp/lab4/lab4_3/ble_hid_device_demo/main/ble_hidd_demo_main.c:267
+#1  0x4038ad6a in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /home/ubuntu/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:234
+ELF file SHA256: f8027679b
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038066c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb64
+load:0x403ce710,len:0x2e48
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2-dev-3318-g8fc8f3f479-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 14 2023 01:43:08[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (29) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (34) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (86) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=21c00h (138240) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00031c28 vaddr=3fc91600 size=025cch (  9676) load[0m
+[0;32mI (119) esp_image: segment 2: paddr=000341fc vaddr=40380000 size=0be1ch ( 48668) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=8f8ach (587948) map[0m
+[0;32mI (228) esp_image: segment 4: paddr=000cf8d4 vaddr=4038be1c size=056cch ( 22220) load[0m
+[0;32mI (238) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (238) boot: Disabling RNG early entropy source...[0m
+[0;32mI (249) cpu_start: Unicore app[0m
+[0;32mI (258) cpu_start: Pro cpu start user code[0m
+[0;32mI (258) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (259) cpu_start: Application information:[0m
+[0;32mI (261) cpu_start: Project name:     hidd_demos[0m
+[0;32mI (267) cpu_start: App version:      1[0m
+[0;32mI (271) cpu_start: Compile time:     Nov 14 2023 01:42:41[0m
+[0;32mI (277) cpu_start: ELF file SHA256:  f8027679b...[0m
+[0;32mI (283) cpu_start: ESP-IDF:          v5.2-dev-3318-g8fc8f3f479-dirty[0m
+[0;32mI (290) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (294) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (299) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (304) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (311) heap_init: At 3FC98300 len 00044410 (273 KiB): DRAM[0m
+[0;32mI (317) heap_init: At 3FCDC710 len 00002950 (10 KiB): STACK/DRAM[0m
+[0;32mI (324) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (331) spi_flash: detected chip: generic[0m
+[0;32mI (335) spi_flash: flash io: dio[0m
+[0;33mW (339) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (352) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (363) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (369) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (377) coexist: coex firmware version: 8770c12[0m
+[0;32mI (382) coexist: coexist rom version 9387209[0m
+[0;32mI (387) main_task: Started on CPU0[0m
+[0;32mI (387) main_task: Calling app_main()[0m
+[0;32mI (397) BLE_INIT: BT controller compile version [c8aa206][0m
+[0;32mI (397) BLE_INIT: Bluetooth MAC: 34:85:18:02:e0:4e[0m
+[0;32mI (407) phy_init: phy_version 1130,b4e4b80,Sep  5 2023,11:09:30[0m
+[0;32mI (467) HID_LE_PRF: esp_hidd_prf_cb_hdl(), start added the hid service to the stack database. incl_handle = 40[0m
+[0;32mI (467) HID_LE_PRF: hid svc handle = 2d[0m
